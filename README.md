@@ -9,16 +9,19 @@ This is a simple web extension for learning purpose. How to develop, test, packa
 Extensions can extend and modify the capability of a browser. This extension is built using the WebExtensions API, a cross-browser system for developing extensions.
 
 ## Dependencies
+You need [npm](https://www.npmjs.com/) or [yarn](https://yarnpkg.com/en/) to build the plugin.
 
-  * npm or yarn
+## Create the dev/test/build environment
+
+    $ # Run npm install
+    $ make init
 
 ## How to build the extension
 The extension can be build by [webpack](https://webpack.js.org) and uses the
 [webpack-webextension-plugin](https://github.com/webextension-toolbox/webpack-webextension-plugin).
 
-    $ make init # Run npm install
-    $ make source-build # Run webpack on your code and create the needed files in the folder addon.
-
+    $ # Run webpack on your code and create the needed files in the folder addon.
+    $ make source-build
 
 ## How to test the extension
 TODO
