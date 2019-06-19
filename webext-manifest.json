@@ -21,5 +21,10 @@
     "page": "options/options.html"
   },
   "permissions": ["storage"],
-  "content_scripts": []
+  "content_scripts": [
+    {
+      "matches": ["*://*.suse.com/*"],
+      "js": ["resources/dist/content_script/hackweek.js"]
+    }
+  ]
 }

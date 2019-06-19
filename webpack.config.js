@@ -21,7 +21,8 @@ module.exports = {
   node: false,
 
   entry: {
-    'resources/dist/options': './src/browser/options.js'
+    'resources/dist/options': './src/browser/options.js',
+    'resources/dist/content_script/hackweek': './src/hackweek/content_script.js'
   },
 
   output: {
