@@ -1,0 +1,20 @@
+{
+  "name": "simple-web-extension",
+  "version": "0.1.0",
+  "description": "This is a simple web extension for learning purpose. How to develop, test, package and publish cross-browser extensions.",
+  "license": "UNLICENSED",
+  "private": true,
+  "author": {
+    "name": "Jürgen Löhel",
+    "email": "juergen@loehel.de"
+  },
+  "contributors": [
+  ],
+  "devDependencies": {
+    "eslint": "^4.11.0",
+    "generate-json-webpack-plugin": "^0.2.2",
+    "web-ext": "^2.2.2",
+    "webpack": "^3.8.1"
+  },
+  "dependencies": {}
+}
