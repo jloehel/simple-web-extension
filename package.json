@@ -15,5 +15,7 @@
     "web-ext": "^2.9.3",
     "webpack": "^3.8.1"
   },
-  "dependencies": {}
+  "dependencies": {
+    "left-pad": "^1.1.1"
+  }
 }

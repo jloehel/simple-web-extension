@@ -22,7 +22,9 @@ module.exports = {
 
   entry: {
     'resources/dist/options': './src/browser/options.js',
-    'resources/dist/content_script/hackweek': './src/hackweek/content_script.js'
+    'resources/dist/content_scripts/hackweek': './src/hackweek/content_script.js',
+    'resources/dist/background_scripts/hackweek': './src/hackweek/background_script.js',
+    'resources/dist/popups/left-pad': './src/hackweek/left-pad.js',
   },
 
   output: {

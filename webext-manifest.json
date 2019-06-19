@@ -21,10 +21,18 @@
     "page": "options/options.html"
   },
   "permissions": ["storage"],
+  "browser_action": {
+    "default_title": "Left Pad",
+    "default_popup": "popups/left-pad.html",
+    "browser_style": true
+  },
+  "background": {
+    "scripts": ["resources/dist/background_scripts/hackweek.js"]
+  },
   "content_scripts": [
     {
       "matches": ["*://*.suse.com/*"],
-      "js": ["resources/dist/content_script/hackweek.js"]
+      "js": ["resources/dist/content_scripts/hackweek.js"]
     }
   ]
 }
