@@ -8,6 +8,13 @@ This is a simple web extension for learning purpose. How to develop, test, packa
 ## What is a web extension
 Extensions can extend and modify the capability of a browser. This extension is built using the WebExtensions API, a cross-browser system for developing extensions.
 
+## Supported browsers
+
+  - [x] Firefox
+  - [ ] Microsoft Edge
+  - [ ] Chromium
+  - [ ] Opera
+
 ## Dependencies
 You need [npm](https://www.npmjs.com/) or [yarn](https://yarnpkg.com/en/) to build the plugin.
 
@@ -24,7 +31,19 @@ The extension can be build by [webpack](https://webpack.js.org) and uses the
     $ make source-build
 
 ## How to test the extension
-TODO
+
+### Manually
+You always can try to load the extension manually in the browser of your choice. You can use [web-ext](https://github.com/mozilla/web-ext) to load the extension for tesing.
+
+#### Firefox
+
+    $ make moz-run
+
+#### Chromium
+
+    $ make chrome-run
+
+### Automated
 https://github.com/mdn/webextensions-examples/tree/master/mocha-client-tests
 
 
