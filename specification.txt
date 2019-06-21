@@ -1,0 +1,75 @@
+---
+coding: utf-8
+
+title: Building a cross-browser extension
+abbrev: bace
+docname: draft-bace-00
+category: hackweek
+
+stand_alone: yes
+pi: [toc, sortrefs, symrefs, comments]
+
+author:
+  -
+    ins: J. Loehel
+    name: Juergen Loehel
+    city: Nuremberg
+    country: Germany
+    email: juergen@loehel.de
+
+--- abstract
+
+I'd like to get familiar with the different browser extension APIs (Chrome,
+Firefox, Opera, and Edge) and learn how to develop, test, package and
+publish a cross-browser extension.
+
+--- middle
+
+# Introduction
+The project was initially created for the SUSE Hackweek 2019.
+
+# Perspective
+The extension was developed to learn more about the web extension API and how
+to develop, test, build, package, and publish a cross-browser extension. It is
+an open source project.
+The web extension itself should be very simple because the focus is on the
+continous integration process for cross-browser extensions.
+The extension will identify all <script></script> or <link/> tags in the DOM
+of a website and block them optionally.
+
+# Functions
+
+1. Get the DOM of website
+2. Parse the DOM of a website
+3. Reads the user specified options
+4. Identify all <script></script> tags in the DOM
+5. Identify all <link/> tags in the DOM
+6. Block all <script>/script> tags
+7. Block all <link/> tags
+
+# Operating Environment
+The same code base of the web extension should run in:
+
+* Firefox
+* Microsoft Edge
+* Chromium
+* Google Chrome
+* Opera
+
+# Design and Implementation Constraints
+The web extension is developed in Javascript.
+
+# User Interfaces
+## Options
+
+* Block <script></script> tags
+* Block <link/> tags
+* Block nothing
+
+
+## Action Command
+
+* Show all identified <script></script> tags
+* Show all identified <link/> tags
+
+--- back
