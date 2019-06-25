@@ -20,7 +20,7 @@
     "open_in_tab": false,
     "page": "options/options.html"
   },
-  "permissions": ["storage"],
+  "permissions": ["tabs", "storage", "devtools"],
   "browser_action": {
     "default_title": "Left Pad",
     "default_popup": "popups/left-pad.html",
