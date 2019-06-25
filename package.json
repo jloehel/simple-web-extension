@@ -16,6 +16,7 @@
     "webpack": "^3.8.1"
   },
   "dependencies": {
+    "node-html-parser": "^1.1.15",
     "left-pad": "^1.1.1"
   }
 }

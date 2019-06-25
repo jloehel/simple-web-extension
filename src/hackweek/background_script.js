@@ -1,5 +1,6 @@
 'use strict'
 
+import { parse } from 'node-html-parser';
 
 console.log("background-script: LOAD");
 
@@ -26,6 +27,16 @@ browser.runtime.onConnect.addListener(function (port) {
       }
       connections[tabId][port.name] = port;
       return;
+    }
+
+    if (message.action == "extractDOM") {
+      var conn = connections[tabId][message.target];
+      var dom = message.dom;
+      var root = parse(dom);
+      var script_tags = root.querySelectorAll("script");
+      console.log("background-script: scripts ", script_tags);
+      var link_tags = root.querySelectorAll("link");
+      console.log("background-script: links ", link_tags);
     }
 
     if (message.target) {
